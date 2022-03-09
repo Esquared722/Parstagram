@@ -12,16 +12,22 @@ The following **required** functionality is completed:
 - [x] User can log in and log out of his or her account.
 - [x] The current signed in user is persisted across app restarts.
 - [x] User can take a photo, add a caption, and post it to "Instagram".
+- [x] User can view the last 20 posts submitted to "Instagram".
+- [x] The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
+- [x] User can pull to refresh the last 20 posts submitted to "Instagram".
 
 The following **optional** features are implemented:
 
 - [x] User sees app icon in home screen and styled bottom navigation view
 - [x] Style the feed to look like the real Instagram feed.
 - [x] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
+- [x] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling.
+- [x] Show the username and creation time for each post.
 
 The following **additional** features are implemented:
 
 - [x] Resized photos before loading them into memory, by using the density of the phone screen
+- [x] Utilized [ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2) for navigating between fragments
 
 ## Video Walkthrough
 
