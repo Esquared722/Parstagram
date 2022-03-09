@@ -6,4 +6,6 @@
     <string name="login_error_network">Network Error in Sending Login Request\n</string>
     <string name="signup_error_username_taken">Username, %s, Already Taken</string>
     <string name="parse_unknown_error">Error occurred whilst processing your request</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

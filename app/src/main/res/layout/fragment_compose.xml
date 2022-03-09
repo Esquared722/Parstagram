@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.ComposeFragment">
+
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="250dp"
+            android:layout_height="330dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Description..."
+            android:lines="1"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Take Picture" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:text="Submit" />
+
+    </LinearLayout>
+    </FrameLayout>
+</layout>

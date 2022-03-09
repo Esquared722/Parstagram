@@ -7,11 +7,10 @@
 
     </data>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:fitsSystemWindows="true"
         tools:context=".MainActivity">
 
         <androidx.appcompat.widget.Toolbar
@@ -27,42 +26,24 @@
                 android:src="@drawable/nav_logo_whiteout" />
         </androidx.appcompat.widget.Toolbar>
 
-        <ImageView
-            android:id="@+id/ivPicture"
-            android:layout_width="250dp"
-            android:layout_height="330dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNavigation"
+            android:layout_below="@id/toolbar">
+        </androidx.viewpager2.widget.ViewPager2>
 
-        <EditText
-            android:id="@+id/etDescription"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:ems="10"
-            android:hint="Description..."
-            android:inputType="none"
-            android:minHeight="48dp" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            app:itemIconTint="@color/black"
+            app:labelVisibilityMode="unlabeled"
 
-        <Button
-            android:id="@+id/btnTakePhoto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@android:color/holo_blue_light"
-            android:text="Take Picture" />
+            app:menu="@menu/menu_bottom_navigation" />
 
-        <Button
-            android:id="@+id/btnSubmit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:text="Submit" />
-
-    </LinearLayout>
+    </RelativeLayout>
 </layout>
